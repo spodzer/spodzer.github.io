@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Taste of Tate</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>A Taste of Tate</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Welcome Food Lovers!</h2>
+            <p>Are you on the lookout for the best meals near UNCG? After being a student for 3 and a half years I curated a list of must-visit food spots that offer delicious dishes. Whether you’re into pizza,  sushi, or wings, you’re in for a treat. Check out our top recommendations and get ready to indulge in mouthwatering flavors.</p>
+        </section>
+        <section class="flex-container">
+            <article class="restaurant">
+                <h3>Manhattan Pizza & Subs</h3>
+                <p>Address: 449 Tate St | Specialty: Subs | Hours: 12 PM - 3 AM</p>
+                <div class="dish-gallery">
+                    <img src="images/manhattanpizza.jpg" onclick="selectDish('Classic N.Y. Style Pizza', 'A delicious, oven-baked dish with a golden, crispy crust topped with a rich tomato sauce, melted cheese, and your choice of fresh toppings.', '$8.99', this)">
+                    <img src="images/manhattansub.jpg" onclick="selectDish('Manhattan Style Sub','A hearty sandwich made with a freshly baked sub roll, filled with your choice of tender meats, melted cheese, and fresh vegetables, all drizzled with flavorful sauces.', '$9.99', this)">
+                    <img src="images/manhattanwings.avif" onclick="selectDish('Wings and Fries','Crispy, golden-brown chicken wings tossed in your choice of savory sauce, paired with a side of perfectly seasoned, crispy fries.', '$9.99', this)">
+                </div>
+            </article>
+            <article class="restaurant">
+                <h3>New York Pizza</h3>
+                <p>Address: 337 Tate St | Specialty: N.Y. Style Pizza | Hours: 11 AM - 2 PM</p>
+                <div class="dish-gallery">
+                    <img src="images/nypepp.jpg" onclick="selectDish('Pepperoni Pizza Slice', 'A classic New York-style pepperoni pizza slice with a thin, foldable crust, topped with tangy tomato sauce and melted mozzarella cheese.','$7.99', this)">
+                    <img src="images/nycheese.jpg" onclick="selectDish('Cheese Pizza Slice', 'A classic New York-style cheese pepperoni pizza slice with a thin, foldable crust, topped with tangy tomato sauce and melted mozzarella cheese.','$7.99', this)">
+                    <img src="images/nyml.jpg" onclick="selectDish('Meat Lovers Slice', 'A classic New York-style meat lovers pizza slice with a thin, foldable crust, topped with tangy tomato sauce and melted mozzarella cheese.','$7.99', this)">
+                </div>
+            </article>
+            <article class="restaurant">
+                <h3>Sushi Republic</h3>
+                <p>Address: 329 Tate St | Specialty: Sushi | Hours: 11:30 AM - 9:30 PM</p>
+                <div class="dish-gallery">
+                    <img src="images/uramaki.jpg" onclick="selectDish('Uramaki', ' flavorful sushi roll with vinegared rice on the outside, wrapped around fresh fillings like tuna, avocado, or cucumber, and often topped with a drizzle of flavorful sauce.', '$13.99', this)">
+                    <img src="images/temaki.jpg" onclick="selectDish('Temaki', 'A hand-rolled sushi cone made with a crispy seaweed wrapper, filled with vinegared rice, fresh fish, and vibrant vegetables.', '$14.99', this)">
+                    <img src="images/sashimi.png" onclick="selectDish('Sashimi', 'Fresh, thinly sliced pieces of salmon, served delicately on their own without rice.','$12.99', this)">
+                </div>
+            </article>
+        </section>
+        <aside id="dish-info" class="dish-info">
+            <h3 id="dish-name"></h3>
+            <p id="dish-desc"></p>
+            <p id="dish-price"></p>
+        </aside>
+        <a href="mealplan.html">Create Your Meal Plan</a>
+    </main>
+</body>
+</html>

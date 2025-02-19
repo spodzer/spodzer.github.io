@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Plan</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Plan Your Meal</h1>
+    </header>
+    <main>
+        <section class="dish-list">
+            <h2>Available Dishes</h2>
+            <ul id="dishes">
+                <li>Manhattan Pizza - $8.99 <button onclick="addToMeal('Manhattan Pizza', 8.99)">Add</button></li>
+                <li>Manhattan Subs - $10.49 <button onclick="addToMeal('Manhattan Subs', 9.99)">Add</button></li>
+                <li>Manhattan Wings - $9.99 <button onclick="addToMeal('Manhattan Wings', 9.99)">Add</button></li>
+                <li>New York Style Pepperoni Slice - $7.99 <button onclick="addToMeal('New York Style Pepperoni Slice', 7.99)">Add</button></li>
+                <li>New York Style Cheese Slice - $7.99 <button onclick="addToMeal('New York Style Cheese Slice', 7.99)">Add</button></li>
+                <li>New York Style Meat Lovers Slice - $7.99 <button onclick="addToMeal('New York Style Meat Lovers Slice', 7.99)">Add</button></li>
+                <li>Uramaki - $15.99 <button onclick="addToMeal('Uramaki', 15.99)">Add</button></li>
+                <li>Temaki - $18.99 <button onclick="addToMeal('Temaki', 18.99)">Add</button></li>
+                <li>Sashimi - $7.50 <button onclick="addToMeal('Sashimi', 7.50)">Add</button></li>
+            </ul>
+        </section>
+        <section class="meal-plan">
+            <h2>Your Meal Plan</h2>
+            <ul id="meal-list"></ul>
+            <p><strong>Total: $<span id="total-price">0.00</span></strong></p>
+        </section>
+    </main>
+    <a href="index.html">Back to Food Recommendations</a>
+</body>
+</html>
