@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e2f;
+    color: #c9d1d9;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.search-bar {
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.search-bar input {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #444c56;
+    background-color: #2d333b;
+    color: #c9d1d9;
+    border-radius: 5px 0 0 5px;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #238636;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #2ea043;
+}
+
+h1 {
+    text-align: center;
+    color: #f0f6fc;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background: #2d333b;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card h2 {
+    font-size: 1.2em;
+    margin: 0 0 10px;
+    color: #f0f6fc;
+}
+
+.card p {
+    margin: 5px 0;
+    color: #8b949e;
+    font-size: 0.9em;
+}
+
+.card a {
+    color: #58a6ff;
+    text-decoration: none;
+    margin-top: auto;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
